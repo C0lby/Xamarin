@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatchSpeed", "WatchSpeed\WatchSpeed.csproj", "{40E42F82-44D3-4A76-BC03-F69E21B75881}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatchSpeedExt", "WatchSpeedExt\WatchSpeedExt.csproj", "{6824FBC3-DEAB-4083-B7A7-90A70619AC93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatchSpeedUI", "WatchSpeedUI\WatchSpeedUI.csproj", "{CA939EE3-4021-49EF-A9BB-5FF1B1BD79F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40E42F82-44D3-4A76-BC03-F69E21B75881}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{40E42F82-44D3-4A76-BC03-F69E21B75881}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{40E42F82-44D3-4A76-BC03-F69E21B75881}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{40E42F82-44D3-4A76-BC03-F69E21B75881}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{40E42F82-44D3-4A76-BC03-F69E21B75881}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{40E42F82-44D3-4A76-BC03-F69E21B75881}.Debug|iPhone.Build.0 = Debug|iPhone
+		{40E42F82-44D3-4A76-BC03-F69E21B75881}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{40E42F82-44D3-4A76-BC03-F69E21B75881}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{40E42F82-44D3-4A76-BC03-F69E21B75881}.Release|iPhone.ActiveCfg = Release|iPhone
+		{40E42F82-44D3-4A76-BC03-F69E21B75881}.Release|iPhone.Build.0 = Release|iPhone
+		{40E42F82-44D3-4A76-BC03-F69E21B75881}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{40E42F82-44D3-4A76-BC03-F69E21B75881}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{6824FBC3-DEAB-4083-B7A7-90A70619AC93}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{6824FBC3-DEAB-4083-B7A7-90A70619AC93}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{6824FBC3-DEAB-4083-B7A7-90A70619AC93}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{6824FBC3-DEAB-4083-B7A7-90A70619AC93}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{6824FBC3-DEAB-4083-B7A7-90A70619AC93}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{6824FBC3-DEAB-4083-B7A7-90A70619AC93}.Debug|iPhone.Build.0 = Debug|iPhone
+		{6824FBC3-DEAB-4083-B7A7-90A70619AC93}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{6824FBC3-DEAB-4083-B7A7-90A70619AC93}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{6824FBC3-DEAB-4083-B7A7-90A70619AC93}.Release|iPhone.ActiveCfg = Release|iPhone
+		{6824FBC3-DEAB-4083-B7A7-90A70619AC93}.Release|iPhone.Build.0 = Release|iPhone
+		{6824FBC3-DEAB-4083-B7A7-90A70619AC93}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{6824FBC3-DEAB-4083-B7A7-90A70619AC93}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{CA939EE3-4021-49EF-A9BB-5FF1B1BD79F4}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{CA939EE3-4021-49EF-A9BB-5FF1B1BD79F4}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{CA939EE3-4021-49EF-A9BB-5FF1B1BD79F4}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{CA939EE3-4021-49EF-A9BB-5FF1B1BD79F4}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{CA939EE3-4021-49EF-A9BB-5FF1B1BD79F4}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{CA939EE3-4021-49EF-A9BB-5FF1B1BD79F4}.Debug|iPhone.Build.0 = Debug|iPhone
+		{CA939EE3-4021-49EF-A9BB-5FF1B1BD79F4}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{CA939EE3-4021-49EF-A9BB-5FF1B1BD79F4}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{CA939EE3-4021-49EF-A9BB-5FF1B1BD79F4}.Release|iPhone.ActiveCfg = Release|iPhone
+		{CA939EE3-4021-49EF-A9BB-5FF1B1BD79F4}.Release|iPhone.Build.0 = Release|iPhone
+		{CA939EE3-4021-49EF-A9BB-5FF1B1BD79F4}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{CA939EE3-4021-49EF-A9BB-5FF1B1BD79F4}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal

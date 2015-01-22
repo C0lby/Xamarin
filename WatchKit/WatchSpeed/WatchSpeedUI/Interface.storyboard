@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="mph" id="6sc-qw-LJz">
+                            <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        </label>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="2HG-Sy-I2p">
+                            <items>
+                                <label height="24" alignment="left" verticalAlignment="center" text="SSW" id="S13-tS-hOg">
+                                    <fontDescription key="font" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
+                                </label>
+                                <label alignment="center" verticalAlignment="bottom" text="COG" id="tfa-MX-ApT">
+                                    <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                </label>
+                                <label height="24" alignment="right" verticalAlignment="center" text="000°" id="LdM-2p-OZE">
+                                    <fontDescription key="font" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="center" text="Speed" id="b64-mB-bEm">
+                            <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        </label>
+                        <group width="1" alignment="center" id="baU-to-ebK">
+                            <items>
+                                <label height="66" alignment="center" verticalAlignment="center" text="00" textAlignment="center" id="9sx-Wf-OSg">
+                                    <fontDescription key="font" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="84"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="center" verticalAlignment="bottom" text="True North" lineHeight="2" id="cZd-a4-gNL">
+                            <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="8"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="CogLabel" destination="tfa-MX-ApT" id="7aL-Bd-XsI"/>
+                        <outlet property="CogValueCardinalLabel" destination="S13-tS-hOg" id="2Vs-ar-jhv"/>
+                        <outlet property="CogValueDegreeLabel" destination="LdM-2p-OZE" id="Mjg-6L-Rl5"/>
+                        <outlet property="NorthValueLabel" destination="cZd-a4-gNL" id="s58-95-Egu"/>
+                        <outlet property="SpeedLabel" destination="b64-mB-bEm" id="ftx-ZV-XJC"/>
+                        <outlet property="SpeedUnitLabel" destination="6sc-qw-LJz" id="EJv-lt-Uwu"/>
+                        <outlet property="SpeedValueLabel" destination="9sx-Wf-OSg" id="J8u-gp-qeS"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y"/>
+                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="672"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+    </scenes>
+</document>
