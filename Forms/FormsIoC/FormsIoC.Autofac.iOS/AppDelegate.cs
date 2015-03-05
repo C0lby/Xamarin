@@ -16,16 +16,17 @@ namespace FormsIoC.Autofac.iOS
 
 			LoadApplication (new App ());
 
+			// should only call this once
 			Bootstrap.Run ();
 
 			provider = Resolver.Resolve<ServicesProvider> ();
 
-			waitThenInject ();
+			waitThenTest ();
 
 			return base.FinishedLaunching (app, options);
 		}
 
-		async void waitThenInject ()
+		async void waitThenTest ()
 		{
 			await Task.Delay (1000);
 
