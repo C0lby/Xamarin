@@ -6,7 +6,12 @@ namespace FormsIoC.Autofac.iOS
 	{
 		public Settings ()
 		{
-			Console.WriteLine ("Settings");
+			Console.WriteLine ("Settings Instantiated");
+		}
+
+		public void PrintLn (string str)
+		{
+			Console.WriteLine (str);
 		}
 	}
 }

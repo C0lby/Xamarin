@@ -1,6 +1,4 @@
-﻿using System;
-using Autofac;
-using Xamarin.Forms.Labs.Services;
+﻿using Autofac;
 
 namespace FormsIoC.Autofac.iOS
 {
@@ -8,14 +6,10 @@ namespace FormsIoC.Autofac.iOS
 	{
 		public static void Run ()
 		{
+			// ISettings will be a dependency of FormsIoC.Autofac.ServiceProvider
+			FormsIoC.Autofac.Bootstrap.SharedContainer.Register (c => new Settings ()).As<ISettings> ();
 
-			var builder = new ContainerBuilder (); 
-
-			builder.Register (c => new Settings ()).As<ISettings> ();
-
-			builder.Build ();
-
-			//builder.Update (Xamarin.Forms.Labs.Services.Resolver);
+			FormsIoC.Autofac.Bootstrap.Run ();
 		}
 	}
 }

@@ -17,7 +17,6 @@ namespace FormsIoC.Autofac.iOS
 			LoadApplication (new App ());
 
 			Bootstrap.Run ();
-			FormsIoC.Autofac.Bootstrap.Run ();
 
 			provider = Resolver.Resolve<ServicesProvider> ();
 
@@ -30,7 +29,8 @@ namespace FormsIoC.Autofac.iOS
 		{
 			await Task.Delay (1000);
 
-			provider.PrintLn ("Yeah Baby!");
+			provider.PrintLn ("Provider Works!");
+			provider.TestSettings ();
 		}
 	}
 }

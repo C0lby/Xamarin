@@ -6,22 +6,26 @@ namespace FormsIoC.Autofac
 {
 	public static class Bootstrap
 	{
+		static ContainerBuilder sharedContainer;
+
+		public static ContainerBuilder SharedContainer {
+			get {
+				return sharedContainer ?? (sharedContainer = new ContainerBuilder ());
+			}
+			set {
+				sharedContainer = value;
+			}
+		}
+
 		public static void Run ()
 		{
+			SharedContainer.RegisterType<ServicesProxy> ();
 
-			var builder = new ContainerBuilder ();
-
-
-			builder.RegisterType<ServicesProxy> ();
-
-
-			// ServiceProxy is a dependency of ServiceProvider
-			builder.RegisterType<ServicesProvider> ();
-
+			// ServiceProxy will be dependency of ServiceProvider
+			SharedContainer.RegisterType<ServicesProvider> ();
 
 			// Create the container
-			var container = builder.Build ();
-
+			var container = SharedContainer.Build ();
 
 			// Once the container is set you can create IResolver instance of
 			// it using the plugin libraries
