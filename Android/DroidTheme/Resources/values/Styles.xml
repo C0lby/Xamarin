@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<style name="DroidTheme.Theme.Blue" parent="@android:style/Theme">
+		<item name="android:windowBackground">@color/theme_blue</item>
+	</style>
+
+	<style name="DroidTheme.Theme.Red" parent="@android:style/Widget.Button">
+		<item name="android:textColor">@color/theme_red</item>
+	</style>
+</resources>
