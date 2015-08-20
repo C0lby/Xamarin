@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{4272DA01-D315-4487-B7B6-3A3933886CB4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GlucoseX.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>GlucoseX.iOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>true</MtouchProfiling>
+    <CodesignProvision>b0f986df-f549-4d68-8622-117b90f1ed96</CodesignProvision>
+    <CodesignKey>iPhone Developer: Colby Williams (R9D8E8L2SP)</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchProfiling>true</MtouchProfiling>
+    <CodesignKey>iPhone Developer: Colby Williams (R9D8E8L2SP)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignProvision>b0f986df-f549-4d68-8622-117b90f1ed96</CodesignProvision>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IpaIncludeArtwork>true</IpaIncludeArtwork>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <BuildIpa>true</BuildIpa>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\Monkey.Robotics-0.5.2\lib\ios-unified\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Robotics.Mobile.Core">
+      <HintPath>..\Components\Monkey.Robotics-0.5.2\lib\ios-unified\Robotics.Mobile.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Robotics.Mobile.Core.iOS">
+      <HintPath>..\Components\Monkey.Robotics-0.5.2\lib\ios-unified\Robotics.Mobile.Core.iOS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_29.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_58.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_87.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_80.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_120.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_180.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_40.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_48.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_55.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_88.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_172.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_196.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="GlucoseX.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Extensions\StoryboardExtensions.cs" />
+    <Compile Include="ViewControllers\GlucoseDataPageViewController.cs" />
+    <Compile Include="ViewControllers\GlucoseDataPageViewController.designer.cs">
+      <DependentUpon>GlucoseDataPageViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\GlucoseDataViewController.cs" />
+    <Compile Include="ViewControllers\GlucoseDataViewController.designer.cs">
+      <DependentUpon>GlucoseDataViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\HistoryTableViewController.cs" />
+    <Compile Include="ViewControllers\HistoryTableViewController.designer.cs">
+      <DependentUpon>HistoryTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\DataSources\GlucosePageViewControllerDataSource.cs" />
+    <Compile Include="ViewControllers\GlucoseDataNewEntryNavigationController.cs" />
+    <Compile Include="ViewControllers\GlucoseDataNewEntryNavigationController.designer.cs">
+      <DependentUpon>GlucoseDataNewEntryNavigationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\GlucoseDataNewEntryTableViewController.cs" />
+    <Compile Include="ViewControllers\GlucoseDataNewEntryTableViewController.designer.cs">
+      <DependentUpon>GlucoseDataNewEntryTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Provider\HealthKitProvider.cs" />
+    <Compile Include="ViewControllers\BLEDevicesNavigationController.cs" />
+    <Compile Include="ViewControllers\BLEDevicesNavigationController.designer.cs">
+      <DependentUpon>BLEDevicesNavigationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\BLEDevicesTableViewController.cs" />
+    <Compile Include="ViewControllers\BLEDevicesTableViewController.designer.cs">
+      <DependentUpon>BLEDevicesTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\GlucoseDataExtensions.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="ViewControllers\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="ViewControllers\DataSources\" />
+    <Folder Include="Delegates\" />
+    <Folder Include="Provider\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="Monkey.Robotics">
+      <Version>0.5.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GlucoseX\GlucoseX.csproj">
+      <Project>{E6AA1650-EEE3-41A0-9513-6CE9421B499D}</Project>
+      <Name>GlucoseX</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

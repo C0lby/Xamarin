@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/view1"
+        android:layout_weight="1" />
+    <TextView
+        android:text="105"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_glucose_value"
+        android:gravity="center"
+        android:textSize="100sp" />
+    <TextView
+        android:text="mg/dL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_glucose_unit"
+        android:gravity="center" />
+    <TextView
+        android:text="4/9/2015 4:00 PM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_glucose_date"
+        android:gravity="center"
+        android:layout_weight="2" />
+</LinearLayout>
