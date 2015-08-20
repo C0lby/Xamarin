@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{9509893D-5926-4882-87E1-324B52A4DB94}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BloodPressureX</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>BloodPressureX</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>true</MtouchProfiling>
+    <CodesignProvision>f4159307-34b8-4fee-aad5-292bb2c6791e</CodesignProvision>
+    <CodesignKey>iPhone Developer: Colby Williams (R9D8E8L2SP)</CodesignKey>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="BeforeBuild" command="/bin/bash root_plist_debug.sh -c &quot;© 2015 bugTrap Inc&quot;" />
+      </CustomCommands>
+    </CustomCommands>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Distribution: Colby Williams (T32UVX74Z3)</CodesignKey>
+    <CodesignProvision>18ac7a8c-5365-42ff-ba40-a0e15ddf390b</CodesignProvision>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="BeforeBuild" command="/bin/bash root_plist_release.sh -c &quot;© 2015 bugTrap Inc&quot;" />
+      </CustomCommands>
+    </CustomCommands>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <CodesignProvision>18ac7a8c-5365-42ff-ba40-a0e15ddf390b</CodesignProvision>
+    <CodesignKey>iPhone Distribution: Colby Williams (T32UVX74Z3)</CodesignKey>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="BeforeBuild" command="/bin/bash root_plist_release.sh -c &quot;© 2015 bugTrap Inc&quot;" />
+      </CustomCommands>
+    </CustomCommands>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchProfiling>true</MtouchProfiling>
+    <CodesignKey>iPhone Developer: Colby Williams (R9D8E8L2SP)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignProvision>f4159307-34b8-4fee-aad5-292bb2c6791e</CodesignProvision>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="BeforeBuild" command="/bin/bash root_plist_debug.sh -c &quot;© 2015 bugTrap Inc&quot;" />
+      </CustomCommands>
+    </CustomCommands>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Xamarin.Insights">
+      <HintPath>packages\Xamarin.Insights.1.9.1.107\lib\Xamarin.iOS10\Xamarin.Insights.dll</HintPath>
+    </Reference>
+    <Reference Include="PLCrashReporterUnifiedBinding">
+      <HintPath>packages\Xamarin.Insights.1.9.1.107\lib\Xamarin.iOS10\PLCrashReporterUnifiedBinding.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_29.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_58.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_87.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_80.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_120.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_180.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_40.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_48.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_55.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_88.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_172.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\i_bugtrap_host_196.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="BloodPressureX.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Domain\Units.cs" />
+    <Compile Include="Domain\BloodPressure.cs" />
+    <Compile Include="Extensions\StoryboardExtensions.cs" />
+    <Compile Include="Extensions\BloodPressureExtensions.cs" />
+    <Compile Include="Extensions\DateExtensions.cs" />
+    <Compile Include="Domain\BloodPressureObjectTypes.cs" />
+    <Compile Include="Utilities\Settings.cs" />
+    <Compile Include="Utilities\Log.cs" />
+    <Compile Include="Utilities\Analytics.cs" />
+    <Compile Include="Utilities\Keychain.cs" />
+    <Compile Include="Utilities\HealthKit.cs" />
+    <Compile Include="Controllers\BloodPressureTbc.cs" />
+    <Compile Include="Controllers\BloodPressureTbc.designer.cs">
+      <DependentUpon>BloodPressureTbc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DetailBloodPressureVc.cs" />
+    <Compile Include="Controllers\DetailBloodPressureVc.designer.cs">
+      <DependentUpon>DetailBloodPressureVc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\HistoryBloodPressureCvc.cs" />
+    <Compile Include="Controllers\HistoryBloodPressureCvc.designer.cs">
+      <DependentUpon>HistoryBloodPressureCvc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\HistoryBloodPressureNc.cs" />
+    <Compile Include="Controllers\HistoryBloodPressureNc.designer.cs">
+      <DependentUpon>HistoryBloodPressureNc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\NewBloodPressureNc.cs" />
+    <Compile Include="Controllers\NewBloodPressureNc.designer.cs">
+      <DependentUpon>NewBloodPressureNc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\NewBloodPressureVc.cs" />
+    <Compile Include="Controllers\NewBloodPressureVc.designer.cs">
+      <DependentUpon>NewBloodPressureVc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\RecentBloodPressureCvc.cs" />
+    <Compile Include="Controllers\RecentBloodPressureCvc.designer.cs">
+      <DependentUpon>RecentBloodPressureCvc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\RecentBloodPressureNc.cs" />
+    <Compile Include="Controllers\RecentBloodPressureNc.designer.cs">
+      <DependentUpon>RecentBloodPressureNc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BloodPressureCvCell.cs" />
+    <Compile Include="BloodPressureCvCell.designer.cs">
+      <DependentUpon>BloodPressureCvCell.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Domain\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Settings.bundle\en.lproj\Root.strings" />
+    <BundleResource Include="Settings.bundle\Root.plist" />
+  </ItemGroup>
+</Project>
